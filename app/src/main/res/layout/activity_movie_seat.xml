@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/leftArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_medium_2"
+        android:src="@drawable/ic_baseline_keyboard_arrow_left_black_24dp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvSeatWatchTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/leftArrow"
+        android:layout_centerHorizontal="true"
+        android:text="Detective Pikachu"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/text_regular_3x"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvCinemaName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvSeatWatchTitle"
+        android:layout_centerHorizontal="true"
+        android:text="Galaxy Cinema - Golden City"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="@dimen/text_regular" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvShowDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvCinemaName"
+        android:layout_centerHorizontal="true"
+        android:text="Wednesday, 10 May, 07:00 PM"
+        android:textSize="@dimen/text_regular_2x" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvShowDate"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/line" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcSeatingPlan"
+        android:layout_width="match_parent"
+        android:layout_marginStart="5dp"
+        android:layout_height="375dp"
+        android:layout_below="@id/line"
+        android:layout_marginTop="@dimen/margin_large" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/smCircle1"
+        android:layout_width="@dimen/seatingStatus"
+        android:layout_height="@dimen/seatingStatus"
+        android:layout_below="@id/rcSeatingPlan"
+        android:layout_marginStart="@dimen/margin_xlarge"
+        android:layout_marginTop="@dimen/margin_medium_2"
+        android:background="@drawable/background_circle_availabe" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtAvailable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rcSeatingPlan"
+        android:layout_alignBaseline="@id/smCircle1"
+        android:layout_marginStart="@dimen/margin_medium"
+        android:layout_toEndOf="@id/smCircle1"
+        android:text="@string/available" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/smCircle2"
+        android:layout_width="@dimen/seatingStatus"
+        android:layout_height="@dimen/seatingStatus"
+        android:layout_below="@id/rcSeatingPlan"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="@dimen/margin_medium_2"
+        android:layout_toEndOf="@id/txtAvailable"
+        android:background="@drawable/background_reversed_circle" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtReserved"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rcSeatingPlan"
+        android:layout_alignBaseline="@id/smCircle1"
+        android:layout_marginStart="@dimen/margin_medium"
+        android:layout_toEndOf="@id/smCircle2"
+        android:text="@string/reserved" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/smCircle3"
+        android:layout_width="@dimen/seatingStatus"
+        android:layout_height="@dimen/seatingStatus"
+        android:layout_below="@id/rcSeatingPlan"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="@dimen/margin_medium_2"
+        android:layout_toEndOf="@id/txtReserved"
+        android:background="@drawable/background_myselected_circle" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtYourSelected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rcSeatingPlan"
+        android:layout_alignBaseline="@id/smCircle1"
+        android:layout_marginStart="@dimen/margin_medium"
+        android:layout_toEndOf="@id/smCircle3"
+        android:text="Your selection" />
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/lines"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_below="@id/txtYourSelected"
+        android:layout_marginStart="@dimen/margin_medium"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/background_dotted_line" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtSeat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lines"
+        android:layout_alignStart="@id/smCircle1"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:text="Tickets"
+        android:textColor="@color/colorPrimaryText" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTicket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lines"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/margin_medium_3"
+        android:layout_alignBaseline="@id/txtSeat"
+        android:text="" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtSeat"
+        android:layout_alignStart="@id/smCircle1"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:text="Seats"
+        android:textColor="@color/colorPrimaryText" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvRowCount"
+        android:layout_width="200dp"
+        android:textDirection="rtl"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtSeat"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:layout_marginEnd="@dimen/margin_medium_3"
+        android:text="" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnMovieSeating"
+        android:layout_width="@dimen/width_ticketbutton"
+        android:layout_height="@dimen/height_startedbtn"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/margin_medium_2"
+        android:background="@drawable/background_button"
+        android:text="Buy Ticket for $0"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+</RelativeLayout>

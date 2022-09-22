@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/firstRlT"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_datetime"
+            android:background="@color/cardColor">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/btnBackTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_medium"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:src="@drawable/ic_baseline_chevron_left_white_24dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_medium_3"
+                android:layout_marginTop="@dimen/margin_xxlarge"
+                android:layout_marginBottom="@dimen/margin_large"
+                android:clipToPadding="false"
+                android:paddingEnd="@dimen/margin_small" />
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/firstRlT"
+            android:layout_marginTop="-80dp"
+            android:background="@drawable/background_rounded"
+            app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/bottom_diff">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rcExternal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_medium_2"
+                        android:layout_marginTop="@dimen/margin_large" />
+
+
+                </RelativeLayout>
+
+
+            </androidx.core.widget.NestedScrollView>
+        </FrameLayout>
+
+    </RelativeLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnNext"
+        android:layout_width="@dimen/width_ticketbutton"
+        android:layout_height="@dimen/height_startedbtn"
+        android:layout_marginBottom="@dimen/margin_medium_2"
+        android:layout_gravity="center|bottom"
+        android:background="@drawable/background_button"
+        android:text="@string/next"
+        android:textColor="@color/white" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

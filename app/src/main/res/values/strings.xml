@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">TheMovieBookingApp</string>
+    <string name="str_welcome">Welcome!</string>
+    <string name="hello_welcome_to_galaxy_app">Hello! Welcome to Galaxy App</string>
+    <string name="welcome_back_login_to_continue">Welcome back,login to continue</string>
+    <string name="sign_in_with_google">Sign in with google</string>
+    <string name="txt_view">Coming Soon</string>
+    <string name="txt_view2">Now Showing</string>
+    <string name="content">After the demise of his father,Tim travel to Ryme city where he runs
+    to his father Pokemon partner,pikachu.They team up and try to work on the case left
+    unfinished by Tim father
+        After the demise of his father,Tim travel to Ryme city where he runs
+    to his father Pokemon partner,pikachu.They team up and try to work on the case left
+    unfinished by Tim father
+        After the demise of his father,Tim travel to Ryme city where he runs
+    to his father Pokemon partner,pikachu.They team up and try to work on the case left
+    unfinished by Tim father
+        After the demise of his father,Tim travel to Ryme city where he runs
+    to his father Pokemon partner,pikachu.They team up and try to work on the case left
+    unfinished by Tim father
+        After the demise of his father,Tim travel to Ryme city where he runs
+    to his father Pokemon partner,pikachu.They team up and try to work on the case left
+    unfinished by Tim father
+        After the demise of his father,Tim travel to Ryme city where he runs
+    to his father Pokemon partner,pikachu.They team up and try to work on the case left
+    unfinished by Tim father
+        After the demise of his father,Tim travel to Ryme city where he runs
+    to his father Pokemon partner,pikachu.They team up and try to work on the case left
+    unfinished by Tim father
+        After the demise of his father,Tim travel to Ryme city where he runs
+    to his father Pokemon partner,pikachu.They team up and try to work on the case left
+    unfinished by Tim father
+        </string>
+    <string name="get_your_ticket">Get Your Ticket</string>
+    <string name="login">Login</string>
+    <string name="signup">SignUp</string>
+    <string name="next">Next</string>
+    <string name="get_it_now">Get it now</string>
+    <string name="don_t_have_any_promo_code">Don\'t have any promo code?</string>
+    <string name="payment_amount">Payment amount</string>
+    <string name="add_new_card">Add New Card</string>
+    <string name="awesome">Awesome!</string>
+    <string name="this_is_your_ticket">This is your ticket</string>
+    <string name="price">Price</string>
+    <string name="seat">Seat</string>
+    <string name="row">Row</string>
+    <string name="seen">Seen</string>
+    <string name="theater">Theater</string>
+    <string name="show_time_date">Show time - Date</string>
+    <string name="booking_no">Booking no</string>
+    <string name="line">-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- </string>
+    <string name="card_holder">CARD HOLDER</string>
+    <string name="expires">EXPIRES</string>
+    <string name="edit">Edit</string>
+    <string name="draweropen">Open</string>
+    <string name="drawerclose">Close</string>
+    <string name="available">Available</string>
+    <string name="reserved">Reserved</string>
+    <string name="line2">-- -- -- -- -- -- --- -- -- -- -- -- -- -- -- --- -- -- -- -- -- -- -- -- --- -- -- -- -- -- -- -- -- -- --    </string>
+    <string name="promotion_code">Promotion Code</string>
+    <string name="select_a_language">Select a language</string>
+    <string name="terms_of_services">Terms of Services</string>
+    <string name="help">Help</string>
+    <string name="rate_us">Rate Us</string>
+    <string name="server_client_id">1090482583899-9s5g87tfoqmmrarvit433pcaesu7vv6g.apps.googleusercontent.com</string>
+</resources>

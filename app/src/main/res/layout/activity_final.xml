@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorSecondaryText">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <RelativeLayout
+            android:id="@+id/rlImgHold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/backFromFinal"
+                android:layout_width="@dimen/width_cross"
+                android:layout_height="@dimen/height_cross"
+                android:layout_marginStart="@dimen/margin_medium_3"
+                android:layout_marginTop="@dimen/margin_xlarge"
+                android:src="@drawable/cross2" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/awesome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/backFromFinal"
+                android:layout_centerHorizontal="true"
+                android:text="@string/awesome"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/text_heading_1x" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtTicket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/awesome"
+                android:layout_centerHorizontal="true"
+                android:text="@string/this_is_your_ticket"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/text_regular_2x" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardHoldImg"
+                android:layout_width="@dimen/width_final_img"
+                android:layout_height="@dimen/height_final_img"
+                android:layout_below="@id/txtTicket"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="@dimen/margin_medium_2"
+                app:cardCornerRadius="@dimen/margin_medium_2">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/imgFinal"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_fimg"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/pikachu" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvFinalMovieTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/imgFinal"
+                        android:layout_marginStart="@dimen/margin_large"
+                        android:text="Detective Pikachu"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/text_regular_3x" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvFinalMovieLength"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvFinalMovieTitle"
+                        android:layout_marginStart="@dimen/margin_large"
+                        android:text="105m-IMAX"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/text_regular_2x" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvFinalMovieLength"
+                        android:layout_alignParentBottom="true"
+                        android:background="@drawable/background_dotted_line" />
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <FrameLayout
+                android:id="@+id/firlFL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cardHoldImg"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="-35dp"
+                android:elevation="@dimen/margin_medium_2">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/circle1"
+                    android:layout_width="@dimen/widht_circle"
+                    android:layout_height="@dimen/height_circle"
+                    android:background="@drawable/background_circle_only" />
+
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/secondFL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cardHoldImg"
+                android:layout_marginStart="-8dp"
+                android:layout_marginTop="-35dp"
+                android:layout_toEndOf="@id/cardHoldImg"
+                android:elevation="@dimen/margin_medium_2">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/circle2"
+                    android:layout_width="@dimen/widht_circle"
+                    android:layout_height="@dimen/height_circle"
+                    android:background="@drawable/background_circle_only" />
+
+
+            </FrameLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardHoldImg2"
+                android:layout_width="@dimen/width_final_img"
+                android:layout_height="@dimen/height_final_card"
+                android:layout_below="@id/cardHoldImg"
+                android:layout_alignStart="@id/cardHoldImg"
+                app:cardCornerRadius="@dimen/margin_medium_2">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/bkNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_large"
+                        android:text="@string/booking_no"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/text_regular_2x" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvFinalBookingNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="@dimen/margin_large"
+                        android:text="GG90909090"
+                        android:textSize="@dimen/text_regular_2x" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/showingDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/bkNo"
+                        android:layout_marginStart="@dimen/margin_large"
+                        android:layout_marginTop="@dimen/margin_medium"
+                        android:text="@string/show_time_date"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/text_regular_2x" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvFinalShowDateAndTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/bkNo"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="@dimen/margin_medium"
+                        android:layout_marginEnd="@dimen/margin_large"
+                        android:text="7:00 PM -10 May"
+                        android:textSize="@dimen/text_regular_2x" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/theater"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/showingDate"
+                        android:layout_marginStart="@dimen/margin_large"
+                        android:layout_marginTop="@dimen/margin_medium"
+                        android:text="@string/theater"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/text_regular_2x" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvFinalCinemaTheater"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/showingDate"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="@dimen/margin_medium"
+                        android:layout_marginEnd="@dimen/margin_large"
+                        android:text="Galaxy Cinema - Golden City"
+                        android:textSize="@dimen/text_regular_2x" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/seen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/theater"
+                        android:layout_marginStart="@dimen/margin_large"
+                        android:layout_marginTop="@dimen/margin_medium"
+                        android:text="@string/seen"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/text_regular_2x" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvFinalSeen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/theater"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="@dimen/margin_medium"
+                        android:layout_marginEnd="@dimen/margin_large"
+                        android:text="2"
+                        android:textSize="@dimen/text_regular_2x" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/row"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/seen"
+                        android:layout_marginStart="@dimen/margin_large"
+                        android:layout_marginTop="@dimen/margin_medium"
+                        android:text="@string/row"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/text_regular_2x" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvFinalRow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/seen"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="@dimen/margin_medium"
+                        android:layout_marginEnd="@dimen/margin_large"
+                        android:text="D"
+                        android:textSize="@dimen/text_regular_2x" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/seat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/row"
+                        android:layout_marginStart="@dimen/margin_large"
+                        android:layout_marginTop="@dimen/margin_medium"
+                        android:text="@string/seat"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/text_regular_2x" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvFinalSeat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/row"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="@dimen/margin_large"
+                        android:layout_marginEnd="@dimen/margin_large"
+                        android:text="5,6"
+                        android:textSize="@dimen/text_regular_2x" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/s"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/seat"
+                        android:layout_marginStart="@dimen/margin_large"
+                        android:layout_marginTop="@dimen/margin_medium"
+                        android:text="s"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/text_regular_2x" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/s"
+                        android:layout_marginStart="@dimen/margin_large"
+                        android:layout_marginTop="@dimen/margin_medium"
+                        android:text="@string/price"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/text_regular_2x" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvFinalPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/s"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="@dimen/margin_medium"
+                        android:layout_marginEnd="@dimen/margin_large"
+                        android:text="$40,00"
+                        android:textSize="@dimen/text_regular_2x" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/price"
+                        android:layout_alignParentBottom="true"
+                        android:background="@drawable/background_dotted_line" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <FrameLayout
+                android:id="@+id/thirdFl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="@dimen/text_regular_3x"
+                android:layout_below="@id/cardHoldImg2"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="-25dp"
+                >
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/circle3"
+
+                    android:layout_width="@dimen/widht_circle"
+                    android:layout_height="@dimen/height_circle"
+                    android:background="@drawable/background_circle_only" />
+
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/fourthFL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cardHoldImg2"
+                android:layout_marginStart="-8dp"
+                android:layout_marginTop="-25dp"
+                android:layout_toEndOf="@id/cardHoldImg2"
+                android:elevation="@dimen/text_regular_3x">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/circle4"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/background_circle_only" />
+
+
+            </FrameLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/width_final_img"
+                android:layout_height="@dimen/barcode_height"
+                android:layout_below="@id/cardHoldImg2"
+                android:layout_alignStart="@id/cardHoldImg2"
+                android:layout_marginBottom="@dimen/margin_medium_2"
+                app:cardCornerRadius="@dimen/margin_medium">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgFinalBarcode"
+                    android:layout_width="300dp"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="15dp"
+                    android:src="@drawable/barcode2" />
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

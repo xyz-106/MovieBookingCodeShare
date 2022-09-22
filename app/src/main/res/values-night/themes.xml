@@ -1,0 +1,37 @@
+<!--<resources xmlns:tools="http://schemas.android.com/tools">-->
+<!--    &lt;!&ndash; Base application theme. &ndash;&gt;-->
+<!--    <style name="Theme.TheMovieBookingApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">-->
+<!--        &lt;!&ndash; Primary brand color. &ndash;&gt;-->
+<!--        <item name="colorPrimary">@color/colorPrimary</item>-->
+<!--        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+
+<!--        <item name="android:statusBarColor" tools:targetApi="l">@color/colorPrimary</item>-->
+<!--    </style>-->
+<!--        &lt;!&ndash; Secondary brand color. &ndash;&gt;-->
+<!--        <style name="Theme.TheMovieBookingApp.TransparentStatusBar" parent="Theme.TheMovieBookingApp">-->
+<!--            <item name="android:fitsSystemWindows">true</item>-->
+<!--            <item name="android:statusBarColor">@android:color/transparent</item>-->
+<!--        </style>-->
+
+<!--</resources>-->
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.TheMovieBookingApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:statusBarColor" tools:targetApi="l">@color/white</item>
+    </style>
+    <!-- Secondary brand color. -->
+    <style name="Theme.TheMovieBookingApp.TransparentStatusBar" parent="Theme.TheMovieBookingApp">
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="android:statusBarColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="Theme.TheMovieBookingApp.HideStatusBar" parent="Theme.TheMovieBookingApp">
+        <item name="android:statusBarColor">@color/profileicon</item>
+    </style>
+
+</resources>

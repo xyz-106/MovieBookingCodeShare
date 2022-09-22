@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/crossBtn"
+        android:layout_width="@dimen/width_cross"
+        android:layout_height="@dimen/height_of_cross"
+        android:layout_marginStart="@dimen/margin_medium_2"
+        android:layout_marginTop="@dimen/margin_xxlarge"
+        android:layout_marginEnd="@dimen/margin_medium_2"
+        android:src="@drawable/cross2" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/cardConfirm"
+        android:layout_width="@dimen/width_ticketbutton"
+        android:layout_height="@dimen/height_startedbtn"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_medium_2"
+        android:layout_marginBottom="@dimen/margin_medium_2"
+        android:background="@drawable/background_button"
+        android:text="Confirm"
+        android:textColor="@color/white" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/cardNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/crossBtn"
+        android:layout_alignStart="@id/crossBtn"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:text="Card Number"
+        android:textColor="@color/colorTrasparentoverlayButton"
+        android:textSize="@dimen/text_regular_2x" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/edtCardNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cardNumber"
+        android:layout_alignStart="@id/crossBtn"
+        android:layout_marginEnd="@dimen/margin_medium_2" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/cardHolder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtCardNumber"
+        android:layout_alignStart="@id/edtCardNumber"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:text="Card Holder"
+        android:textColor="@color/colorTrasparentoverlayButton"
+        android:textSize="@dimen/text_regular_2x" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/edtCardHolder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cardHolder"
+        android:layout_alignStart="@id/crossBtn"
+        android:layout_marginEnd="@dimen/margin_medium_2"
+        android:text=""
+        android:textColorHint="@color/colorPrimaryText" />
+
+    <LinearLayout
+        android:id="@+id/firstLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtCardHolder"
+        android:layout_alignStart="@id/edtCardNumber"
+        android:layout_alignEnd="@id/edtCardNumber"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/expirationDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_weight="1"
+            android:text="Expiration Date"
+            android:textColor="@color/colorTrasparentoverlayButton"
+            android:textSize="@dimen/text_regular_2x" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/cvc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_weight="1"
+            android:text="CVC"
+            android:textColor="@color/colorTrasparentoverlayButton"
+            android:textSize="@dimen/text_regular_2x" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/firstLL"
+        android:layout_alignStart="@id/crossBtn"
+        android:layout_alignEnd="@id/edtCardNumber"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtExpirationDate"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=""
+            android:hint="12/22"
+            android:defaultFocusHighlightEnabled="true"
+            android:textColorHint="@color/colorPrimaryText" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtCVC"
+            android:layout_width="@dimen/edt_width"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cvc"
+            android:layout_weight="1"
+            android:text=""
+            android:hint="123"
+            android:textColorHint="@color/colorPrimaryText" />
+    </LinearLayout>
+
+</RelativeLayout>

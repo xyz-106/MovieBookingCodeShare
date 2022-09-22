@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="@dimen/width_carousel"
+        android:layout_height="@dimen/height_carousel"
+        android:backgroundTint="@color/cardColor">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgVisa"
+                android:layout_width="@dimen/width_visa"
+                android:layout_height="@dimen/height_visa"
+                android:layout_marginStart="@dimen/margin_medium_2"
+                app:srcCompat="@drawable/visa2" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgDotted"
+                android:layout_width="@dimen/width_star"
+                android:layout_height="@dimen/height_star"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="@dimen/margin_medium_2"
+                app:srcCompat="@drawable/dotted_prev_ui" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/stars"
+                android:layout_width="@dimen/width_asterik"
+                android:layout_marginTop="12dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/imgDotted"
+                android:layout_alignStart="@id/imgVisa"
+                app:srcCompat="@drawable/star_prev_ui" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvLastFourDigit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imgDotted"
+                android:layout_alignEnd="@id/imgDotted"
+                android:layout_marginTop="23dp"
+                android:text="8014"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_regular_3x"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvCardHoler"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/stars"
+                android:layout_alignStart="@id/imgVisa"
+                android:layout_marginTop="@dimen/margin_medium_2"
+                android:text="@string/card_holder"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/text_regular_2x" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/stars"
+                android:layout_alignBaseline="@id/tvCardHoler"
+                android:layout_alignEnd="@id/imgDotted"
+                android:text="@string/expires"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/text_regular_2x" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvCardHolderName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvCardHoler"
+                android:layout_alignStart="@id/imgVisa"
+                android:layout_marginTop="@dimen/margin_small"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_regular_2x"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvExpireDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/stars"
+                android:layout_alignBaseline="@id/tvCardHolderName"
+                android:layout_alignEnd="@id/imgDotted"
+                android:text="08/23"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_regular_2x"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

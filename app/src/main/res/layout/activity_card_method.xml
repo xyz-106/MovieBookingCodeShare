@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/btnBackComboset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_medium_2"
+        android:layout_marginTop="@dimen/margin_xxlarge"
+        android:src="@drawable/ic_baseline_keyboard_arrow_left_black_24dp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/paymentMethod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnBackComboset"
+        android:layout_alignStart="@id/btnBackComboset"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:text="@string/payment_amount"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="@dimen/text_regular_2x" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTotalCharges"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/paymentMethod"
+        android:layout_alignStart="@id/btnBackComboset"
+        android:text="$ 926.1"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/text_heading_1x"
+        android:textStyle="bold" />
+
+    <alirezat775.lib.carouselview.CarouselView
+        android:id="@+id/carouselView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTotalCharges"
+        android:layout_marginTop="@dimen/margin_medium_2" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/addCircleBtn"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_below="@id/carouselView"
+        android:layout_alignStart="@id/btnBackComboset"
+        android:layout_marginTop="@dimen/margin_medium_2"
+        android:background="@drawable/ic_baseline_add_circle_outline_24" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/btnNewCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/carouselView"
+        android:layout_marginStart="@dimen/margin_medium"
+        android:layout_marginTop="@dimen/margin_medium_2"
+        android:layout_toEndOf="@id/addCircleBtn"
+        android:text="@string/add_new_card"
+        android:textColor="@color/colorGreen2"
+        android:textSize="@dimen/text_regular_2x" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnConfirmToFinal"
+        android:layout_width="@dimen/width_ticketbutton"
+        android:layout_height="@dimen/height_startedbtn"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_medium_2"
+        android:layout_marginBottom="@dimen/margin_medium_2"
+        android:background="@drawable/background_button"
+        android:text="Confirm"
+        android:textColor="@color/white" />
+
+
+</RelativeLayout>

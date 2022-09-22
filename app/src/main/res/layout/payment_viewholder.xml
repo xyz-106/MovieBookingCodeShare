@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/margin_medium_2">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_payment_black_24dp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_medium_2"
+        android:layout_toEndOf="@id/icon">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvCardMethod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Credit card"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/text_regular_2x" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTypeofCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvCardMethod"
+            android:text="Visa,master card,JCB"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="@dimen/text_regular" />
+    </RelativeLayout>
+</RelativeLayout>

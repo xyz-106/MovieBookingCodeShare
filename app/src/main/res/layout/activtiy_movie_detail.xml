@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MovieDetailActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbarDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_moviedetail_img"
+            app:collapsedTitleTextColor="@color/white"
+            app:contentScrim="@color/colorPrimaryDark"
+            app:expandedTitleTextColor="@android:color/transparent"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:title="Detective Pikachu">
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/backBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_large"
+                android:elevation="@dimen/margin_large"
+                android:src="@drawable/ic_baseline_chevron_left_white_24dp" />
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:elevation="@dimen/margin_large"
+                android:src="@drawable/ic_baseline_play_circle_outline_whie_24dp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardCornerRadius="@dimen/margin_medium_2">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivDetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    app:layout_collapseMode="parallax"
+                    tools:srcCompat="@drawable/pikachu" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/tlBar"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:layout_collapseMode="parallax" />
+
+            />
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-50dp"
+        android:background="@drawable/background_rounded"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+
+            >
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_medium_2"
+                    android:layout_marginTop="@dimen/margin_medium_2"
+                    android:text="Detective Pikachu"
+                    android:textSize="@dimen/text_heading_1x"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvRunTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvTitle"
+                    android:layout_alignStart="@id/tvTitle"
+                    android:layout_marginEnd="@dimen/margin_medium"
+                    android:text="1hr 45min" />
+
+                <RatingBar
+                    android:id="@+id/tvRtBar"
+                    style="@style/Widget.AppCompat.RatingBar.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvTitle"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginEnd="@dimen/margin_medium"
+                    android:layout_toEndOf="@id/tvRunTime"
+                    android:numStars="5"
+                    android:progressTint="@color/colorAccent"
+                    tools:rating="4.5" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvRatingImdb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvTitle"
+                    android:layout_toEndOf="@id/tvRtBar"
+                    android:text="IMDb 6.6" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rcBtnView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvRtBar"
+                    android:layout_alignStart="@id/tvRunTime"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:clipToPadding="false"
+                    android:paddingEnd="@dimen/margin_medium_2" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/plot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rcBtnView"
+                    android:layout_alignStart="@id/rcBtnView"
+                    android:layout_marginTop="@dimen/margin_medium_2"
+                    android:text="Plot Summary"
+                    android:textSize="@dimen/text_regular_3x"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/plot"
+                    android:layout_alignStart="@id/plot"
+                    android:layout_marginTop="@dimen/margin_medium_2"
+                    android:layout_marginEnd="@dimen/margin_medium_2"
+                    android:text="@string/content"
+                    android:textSize="@dimen/text_regular_2x" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/cast"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvContent"
+                    android:layout_alignStart="@id/tvContent"
+                    android:layout_marginTop="@dimen/margin_medium_2"
+                    android:text="Cast"
+                    android:textSize="@dimen/text_regular_3x"
+                    android:textStyle="bold" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rcImgCircle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/cast"
+                    android:layout_alignStart="@id/cast"
+                    android:layout_marginTop="@dimen/margin_medium_2"
+                    android:layout_marginBottom="@dimen/bottom_diff"
+                    android:clipToPadding="false"
+                    android:paddingEnd="@dimen/margin_medium_2" />
+
+
+            </RelativeLayout>
+
+
+        </androidx.core.widget.NestedScrollView>
+    </FrameLayout>
+
+<!--    <View-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@drawable/gradient" />-->
+
+    <androidx.appcompat.widget.AppCompatButton
+
+        android:id="@+id/btnGetTicket"
+        android:layout_width="@dimen/width_ticketbutton"
+        android:layout_height="@dimen/height_startedbtn"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="@dimen/margin_medium_2"
+        android:background="@drawable/background_confrim"
+        android:text="@string/get_your_ticket"
+        android:textColor="@color/white" />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

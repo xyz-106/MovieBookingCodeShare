@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="colorPrimary">#623EEA</color>
+    <color name="profileicon">#390B77</color>
+    <color name="cardColor">#8D77FD</color>
+    <color name="white">#FFFFFF</color>
+    <color name="colorPrimaryDark">#161c24</color>
+    <color name="colorSecondaryText">#F7F6F9</color>
+    <color name="colorPrimaryText">#D9D9EF</color>
+    <color name="colorTrasparentoverlayButton">#80000000</color>
+    <color name="colorAccent">#e7b943</color>
+    <color name="colorGreen">#32C8BA</color>
+    <color name="colorGreen2">#23E77F</color>
+    <color name="movieseat_avaliable_color">#D0D8EB</color>
+    <color name="movieseat_taken_color">#8291b2</color>
+    <color name="red">#EF0B0B</color>
+</resources>

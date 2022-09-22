@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtRc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Avaliable in"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/text_regular_3x" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/internalRc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/txtRc"
+        android:layout_alignStart="@id/txtRc" />
+
+</RelativeLayout>

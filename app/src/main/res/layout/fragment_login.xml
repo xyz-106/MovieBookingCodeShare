@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_small"
+        android:layout_marginTop="@dimen/margin_xlarge"
+        android:layout_marginEnd="@dimen/margin_medium_2"
+        app:boxStrokeColor="@color/colorPrimaryText"
+        app:endIconMode="clear_text"
+        app:hintTextColor="@color/colorPrimaryText">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtEmailField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:hint="Email"
+
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtInput"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="2dp"
+        android:text="Email Field Required"
+        android:textColor="@color/red"
+        android:textSize="10sp"
+        android:visibility="invisible" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtInput2"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtInput"
+        android:layout_alignStart="@id/txtInput"
+        android:layout_alignEnd="@id/txtInput"
+        android:layout_marginTop="@dimen/margin_large"
+        app:boxStrokeColor="@color/colorPrimaryText"
+        app:endIconMode="password_toggle"
+        app:hintTextColor="@color/colorPrimaryText">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtPasswordField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:hint="Password" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/test2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtInput2"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="2dp"
+        android:text="Password Field Required"
+        android:textColor="@color/red"
+        android:textSize="10sp"
+        android:visibility="invisible" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/forgotTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtInput2"
+        android:layout_alignEnd="@id/txtInput"
+        android:layout_marginTop="@dimen/margin_xxlarge"
+        android:text="Forgot Password?" />
+
+    <include
+        android:id="@+id/vpLoginSignUp"
+        layout="@layout/button_view_holder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/forgotTxt"
+        android:layout_alignStart="@id/txtInput"
+        android:layout_alignEnd="@id/txtInput"
+        android:layout_marginTop="@dimen/margin_xxlarge" />
+</RelativeLayout>

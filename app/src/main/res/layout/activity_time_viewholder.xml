@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtDay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fr"
+        android:textAllCaps="false"
+        android:textSize="@dimen/text_regular_2x"
+        android:layout_marginEnd="@dimen/margin_xlarge"
+        android:textColor="@color/white"
+
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtDay"
+        android:text="10"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_regular_2x"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnGenre"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="@dimen/margin_small"
+        android:background="@drawable/background_genrebutton"
+        android:text="Mystrey"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimaryText" />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

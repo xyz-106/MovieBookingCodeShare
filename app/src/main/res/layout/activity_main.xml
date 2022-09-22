@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardColor"
+    tools:context=".activities.MainActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgFrontPic"
+        android:layout_width="240dp"
+        android:layout_height="280dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/profilemargin"
+        android:scaleType="centerCrop"
+        android:src="@drawable/change"
+        android:visibility="visible" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtHeadingWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgFrontPic"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_xxlarge"
+        android:text="@string/str_welcome"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_heading_1x"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtHeadingWelcome"
+        android:layout_centerHorizontal="true"
+        android:text="@string/hello_welcome_to_galaxy_app"
+        android:textColor="@color/colorSecondaryText" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnGetStarted"
+        android:layout_width="@dimen/width_startedbtn"
+        android:layout_height="@dimen/height_startedbtn"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="@dimen/margin_xxlarge"
+        android:background="@drawable/background_button"
+        android:text="Get Started"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+
+        />
+
+</RelativeLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jshelf.themoviebookingapp.viewpods.fbgooglebtnViewpod xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:id="@+id/firstRl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_loginbutton">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgFacebook"
+            android:layout_width="@dimen/width_google"
+            android:layout_height="@dimen/height_google"
+            android:layout_marginStart="@dimen/margin_medium_2"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:src="@drawable/facbook_logo" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_xlarge"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_toEndOf="@id/imgFacebook"
+            android:background="@android:color/transparent"
+            android:text="Sign in with facebook"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="@dimen/text_regular_2x" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/secondRl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/firstRl"
+        android:layout_marginTop="@dimen/margin_medium_3"
+        android:background="@drawable/background_loginbutton">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgGoogle"
+            android:layout_width="@dimen/width_google"
+            android:layout_height="@dimen/height_google"
+            android:layout_marginStart="@dimen/margin_medium_2"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:src="@drawable/google" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_xlarge"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_toEndOf="@id/imgGoogle"
+            android:background="@android:color/transparent"
+            android:text="@string/sign_in_with_google"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="@dimen/text_regular_2x" />
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/secondRl"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/margin_medium_3"
+        android:layout_marginBottom="@dimen/margin_medium_3"
+        android:background="@drawable/background_confrim"
+        android:text="Confirm"
+        android:textAllCaps="false"
+
+        android:textColor="@color/white" />
+</com.jshelf.themoviebookingapp.viewpods.fbgooglebtnViewpod>
